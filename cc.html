@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency convertor</title>
+    <link rel="stylesheet" href="cc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+    <h3>CURRENCY CONVERTOR</h3>
+    <div class="amount">
+    <p>Enter Amount</p>
+    <input value="100" type="number">
+</div>
+<!-- creating outer big div for flags  -->
+ <div class="outer-div">
+    <!-- creating inner div-1 -->
+     <div id="from" class="inner">
+        From
+        <!-- <p>PKR</p> -->
+         <div class="cbox">
+        <img src="https://flagsapi.com/PK/flat/64.png">
+            <select name="" id="countries">
+                <option value="PKR">PKR</option>
+               
+            </select>
+     </div>
+     </div>
+
+     <i class="fa-solid fa-right-left"></i>
+     <!-- inner div2 -->
+<div id="to" class="inner">
+    To
+     <div class="cbox">
+    <img src="https://flagsapi.com/US/flat/64.png">
+    <select name="" id="countries">
+       
+    
+    </select>
+</div>
+ </div>
+</div>
+
+ <!-- message -->
+  <div id="msg">
+   1 USD =356 PKR
+  </div>
+  <!-- button -->
+   <button id="btn">Get Exchange Rate</button>
+
+    </div>
+    
+
+<script src="countrycode.js"></script>
+    <script src="cc.js"></script>
+</body>
+</html>
